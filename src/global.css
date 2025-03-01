@@ -1,9 +1,15 @@
 @import "tailwindcss";
 
-*, ::before, ::after, :root {
+:root {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+
+  list-style: none;
+  text-decoration: none;
 
   color-scheme: light dark;
+}
+
+@theme {
+  --drop-shadow-glow: 0 0 2em #ffb23f80;
 }

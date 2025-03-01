@@ -1,5 +1,3 @@
-import React from 'react'
-
 import pfp from '../images/pfp.png'
 
 export default function greeting() {

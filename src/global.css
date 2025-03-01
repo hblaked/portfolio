@@ -11,6 +11,10 @@
   color-scheme: light dark;
 }
 
+body {
+  background-color: #161616;
+}
+
 @theme {
   --drop-shadow-glow: 0 0 2em #ffb23f80;
 }

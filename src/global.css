@@ -19,7 +19,7 @@ body {
   --drop-shadow-glow: 0 0 2em #ffb23f80;
 }
 
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 45rem) {
   .mobile-resize-div {
     flex-direction: column-reverse;
     align-items: center;

@@ -36,8 +36,8 @@ export default function greeting() {
       <div className='perspective-100dvh'>
         <img 
           src={pfp}
-          onMouseMove={mouseInteraction} onMouseOut={mouseInteractionReset}
-          className='w-dvw max-w-[20rem] rounded-2xl hover:drop-shadow-glow' 
+          // onMouseOver={mouseInteraction} onMouseUp={mouseInteractionReset}
+          className='w-dvw max-w-[20rem] rounded-2xl hover:drop-shadow-glow transition-all duration-150' 
         />
       </div>
     </div>

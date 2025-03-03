@@ -11,12 +11,13 @@
   color-scheme: light dark;
 }
 
-body {
-  background-color: #161616;
-}
-
 @theme {
   --drop-shadow-glow: 0 0 2em #ffb23f80;
+  --background: #161616;
+}
+
+body {
+  background-color: var(--background);
 }
 
 @media screen and (max-width: 45em) {

@@ -18,3 +18,23 @@ body {
 @theme {
   --drop-shadow-glow: 0 0 2em #ffb23f80;
 }
+
+@media screen and (max-width: 30rem) {
+  .mobile-resize-div {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+
+  .mobile-resize-hide {
+    display: none;
+  }
+
+  .mobile-resize-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .mobile-resize-replaceblur {
+    backdrop-filter: blur(5px);
+  }
+}

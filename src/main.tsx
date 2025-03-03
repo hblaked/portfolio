@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 import './global.css'
 import Home from './pages/home.tsx'
 import Projects from './pages/projects.tsx'
+import Privacy from './pages/privacy.tsx'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/projects',
     element: <Projects />
+  },
+  {
+    path: '/privacy',
+    element: <Privacy />
   },
 ]);
 

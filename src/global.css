@@ -37,4 +37,8 @@ body {
   .mobile-resize-replaceblur {
     backdrop-filter: blur(5px);
   }
+
+  .mobile-resize-privacy {
+    margin-top: 1.5em;
+  }
 }

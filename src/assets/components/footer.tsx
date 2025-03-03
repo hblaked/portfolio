@@ -1,9 +1,10 @@
+import { Link, Outlet } from "react-router-dom"
 
 export default function Footer() {
   return (
     <footer className='flex justify-between mt-15'>
         <div className='text-neutral-600'>
-            2025 <a href='/' className='underline'>hblaked.dev</a>
+            2025 <Link to={`/`} className='hover:underline'>hblaked.dev</Link> | <Link to={`/privacy`} className='font-bold  hover:underline'>privacy</Link>
         </div>
 
         <div className='flex gap-5'>
@@ -11,6 +12,7 @@ export default function Footer() {
 
             <svg className='cursor-pointer hover:scale-125 hover:fill-neutral-400 transition-all duration-150 fill-neutral-600' xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"><path d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h624q29.7 0 50.85 21.16Q864-725.68 864-695.96v432.24Q864-234 842.85-213T792-192H168Zm312-240L168-611v347h624v-347L480-432Zm0-85 312-179H168l312 179Zm-312-94v-85 432-347Z"/></svg>
         </div>
+        <Outlet />
     </footer>
   )
 }

@@ -14,7 +14,7 @@ export default function PrivacyInfo() {
       
       <div className='flex flex-col gap-3'>
         <h1 className='font-bold font-serif text-3xl'>What information do I collect?</h1>
-        <p className='text-neutral-300'>This is mainly a static portfolio site, so I don't actively collect any personal data. There's no accounts, cookie tracking, and no data gathering.</p>
+        <p className='text-neutral-300'>This is mainly a static portfolio site, so I don't actively collect any personal data. There's no accounts, cookie tracking, and no malicious data gathering.</p>
         <h1 className='font-bold text-[1.2rem]'>1. What country/state you are visiting the site from</h1>
         <h1 className='font-bold text-[1.2rem]'>2. What type of device you are currently using</h1>
         <h1 className='font-bold text-[1.2rem]'>3. What operating system that device is using</h1>

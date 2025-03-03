@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <footer className='flex justify-between mt-15'>
         <div className='text-neutral-600'>
-            2025 <a href='/' className='underline'>hblaked.codes</a>
+            2025 <a href='/' className='underline'>hblaked.dev</a>
         </div>
 
         <div className='flex gap-5'>

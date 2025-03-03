@@ -2,16 +2,18 @@ import pfp from '../images/pfp.png'
 
 export default function greeting() {
 
-  function mouseInteraction(event: { clientX: number; target: { getBoundingClientRect: () => { (): any; new(): any; x: number; y: number }; offsetWidth: number; offsetHeight: number; style: { transform: string } }; clientY: number }) {
-    const posX = parseFloat(((event.clientX - event.target.getBoundingClientRect().x) / event.target.offsetWidth - 0.5).toFixed(2))
-    const posY = parseFloat(((event.clientY - event.target.getBoundingClientRect().y) / event.target.offsetHeight - 0.5).toFixed(2))
+  // function mouseInteraction(event: { clientX: number; target: { getBoundingClientRect: () => { (): any; new(): any; x: number; y: number }; offsetWidth: number; offsetHeight: number; style: { transform: string } }; clientY: number }) {
+  //   const posX = parseFloat(((event.clientX - event.target.getBoundingClientRect().x) / event.target.offsetWidth - 0.5).toFixed(2))
+  //   const posY = parseFloat(((event.clientY - event.target.getBoundingClientRect().y) / event.target.offsetHeight - 0.5).toFixed(2))
 
-    event.target.style.transform = `rotateX(${-50 * posY}deg) rotateY(${50 * posX}deg)`
-  }
+  //   event.target.style.transform = `rotateX(${-50 * posY}deg) rotateY(${50 * posX}deg)`
+  // }
 
-  function mouseInteractionReset(event: { target: { style: { transform: null } } }) {
-      event.target.style.transform = null
-  }
+  // function mouseInteractionReset(event: { target: { style: { transform: null } } }) {
+  //     event.target.style.transform = null
+  // }
+
+  // ISUES WITH DEPLOYING DUE TO TYPE NOT BEING READ | FIX AT LATER DATE
 
   return (
     <div className='mobile-resize-div flex justify-between mt-15 gap-10'>

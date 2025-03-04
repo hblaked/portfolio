@@ -7,7 +7,7 @@ export default function header() {
       <header className='flex justify-between w-full text-[1rem] text-neutral-400 z-99'>
         <Link to={`/`} className='hover:text-neutral-100 transition-colors duration-150'>home</Link>
         <Link to={`/projects`} className='hover:text-neutral-100 transition-colors duration-150'>projects</Link>
-        <Link to={`/`} className='hover:text-neutral-100 transition-colors duration-150'>contact</Link>
+        <Link to={`/contact`} className='hover:text-neutral-100 transition-colors duration-150'>contact</Link>
         <Outlet />
       </header>
     </div>

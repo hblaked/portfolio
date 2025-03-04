@@ -6,6 +6,7 @@ import './global.css'
 import Home from './pages/home.tsx'
 import Projects from './pages/projects.tsx'
 import Privacy from './pages/privacy.tsx'
+import Contact from './pages/contact.tsx'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: '/privacy',
     element: <Privacy />
+  },
+  {
+    path: '/contact',
+    element: <Contact />
   },
 ]);
 

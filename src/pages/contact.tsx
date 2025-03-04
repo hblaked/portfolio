@@ -1,5 +1,5 @@
 import Header from "../assets/components/header";
-import ContactLinks from "../assets/components/contactlinks";
+import ContactLinks from "../assets/components/contactlinks.jsx";
 import Footer from "../assets/components/footer";
 
 export default function Contact() {

@@ -6,15 +6,15 @@
           },
           {
             "src": "/projects",
-            "dest": "/"
+            "dest": "/projects"
           },
           {
             "src": "/privacy",
-            "dset": "/"
+            "dset": "/privacy"
           },
           {
             "src": "/contact",
-            "dest": "/"
+            "dest": "/contact"
           }
     ]
 }

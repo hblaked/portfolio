@@ -1,20 +1,20 @@
 {
-    "'routes": [
+    "routes": [
         {
             "src": "/",
             "dest": "/"
           },
           {
             "src": "/projects",
-            "dest": "/projects"
+            "dest": "/"
           },
           {
             "src": "/privacy",
-            "dset": "/privacy"
+            "dset": "/"
           },
           {
             "src": "/contact",
-            "dest": "/contact"
+            "dest": "/"
           }
     ]
 }

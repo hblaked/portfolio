@@ -10,7 +10,7 @@
           },
           {
             "src": "/privacy",
-            "dset": "/"
+            "dest": "/"
           },
           {
             "src": "/contact",

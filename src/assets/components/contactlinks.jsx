@@ -1,36 +1,36 @@
 
 export default function ContactLinks() {
-  // const onSubmit = async (event) => {
-  //   event.preventDefault();
-  //   const formData = new FormData(event.target);
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-  //   formData.append('access_key', '732a81d9-cb4f-49d5-8d71-38e3e8d1545a');
+    formData.append('access_key', '732a81d9-cb4f-49d5-8d71-38e3e8d1545a');
 
-  //   const object = Object.fromEntries(formData);
-  //   const json = JSON.stringify(object);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-  //   const res = await fetch('https://api.web3forms.com/submit', {
-  //     method: 'POST',
-  //     headers: {
-  //       "Content-Type": 'application/json',
-  //       Accept: 'application/json'
-  //     },
-  //     body: json
-  //   }).then((res) => res.json);
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        "Content-Type": 'application/json',
+        Accept: 'application/json'
+      },
+      body: json
+    }).then((res) => res.json);
 
-  //   if (res.sucess) {
-  //     event.target.reset();
-  //   } else {
-  //     event.target.reset();
-  //   };
-  // };
+    if (res.sucess) {
+      event.target.reset();
+    } else {
+      event.target.reset();
+    };
+  };
 
   return (
     <div className='flex flex-col gap-10'>
       <div className='flex flex-col gap-3'>
         <h1 className='font-bold font-serif text-3xl'>Contact form.</h1>
 
-        <form className='flex-col w-full'>
+        <form className='flex-col w-full' onSubmit={onSubmit}>
           <div className='grid grid-cols-2 gap-3'>
             <input name='name' className='w-full p-1 pl-3 pr-3 border border-neutral-500 rounded-md' type='text' placeholder='Name' required />
             <input name='email' className='w-full p-1 pl-3 pr-3 border border-neutral-500 rounded-md' type='email' placeholder='Email' required />

@@ -16,7 +16,7 @@ export default function ContactLinks() {
         Accept: 'application/json'
       },
       body: json,
-    });
+    }).then((res) => res.json);
 
     if (res.sucess) {
       console.log('Message sent.', res);

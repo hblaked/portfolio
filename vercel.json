@@ -1,0 +1,20 @@
+{
+    "'routes": [
+        {
+            "src": "/",
+            "dest": "/"
+          },
+          {
+            "src": "/projects",
+            "dest": "/"
+          },
+          {
+            "src": "/privacy",
+            "dset": "/"
+          },
+          {
+            "src": "/contact",
+            "dest": "/"
+          }
+    ]
+}

@@ -22,7 +22,7 @@ export default function greeting() {
         <div>
           <h1 className='text-6xl font-bold font-serif mb-5'>Hi, I'm Hayden 👋🏻</h1>
 
-          <p className='text-neutral-300'>21-year-old full-stack developer from Arkansas, USA 🇺🇸</p>
+          <p className='text-neutral-300'>21-year-old frontend developer from Arkansas, USA 🇺🇸</p>
 
           <p className='text-neutral-300'>I like to develop sleek & responsive websites, play video games and talk to all the ducks in my jeep when I get stumped.</p>
         </div>

@@ -22,6 +22,11 @@ body {
 
 @media screen and (max-width: 45em) {
   .mobile-resize-div {
+    align-items: center;
+    margin-top: 1.5em;
+  }
+  
+  .mobile-resize-div-rev {
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 1.5em;

@@ -17,7 +17,7 @@ export default function greeting() {
 
 
   return (
-    <div className='mobile-resize-div flex justify-between mt-15 gap-10'>
+    <div className='mobile-resize-div-rev flex justify-between mt-15 gap-10'>
       <div className='flex flex-col justify-center gap-10'>
         <div>
           <h1 className='text-6xl font-bold font-serif mb-5'>Hi, I'm Hayden 👋🏻</h1>

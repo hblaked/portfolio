@@ -26,7 +26,7 @@ export default function ContactLinks() {
   };
 
   return (
-    <div className='flex flex-col gap-10 mt-15'>
+    <div className='mobile-resize-div flex flex-col gap-10 mt-15'>
       <div className='flex flex-col gap-3'>
         <h1 className='font-bold font-serif text-3xl'>Contact form.</h1>
 

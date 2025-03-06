@@ -22,7 +22,6 @@ body {
 
 @media screen and (max-width: 45em) {
   .mobile-resize-div {
-    align-items: center;
     margin-top: 1.5em;
   }
   

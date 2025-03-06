@@ -4,18 +4,16 @@ import resume from '../downloads/Resume.pdf';
 
 export default function greeting() {
 
-  // function mouseInteraction(event: { clientX: number; target: { getBoundingClientRect: () => { (): any; new(): any; x: number; y: number }; offsetWidth: number; offsetHeight: number; style: { transform: string } }; clientY: number }) {
-  //   const posX = parseFloat(((event.clientX - event.target.getBoundingClientRect().x) / event.target.offsetWidth - 0.5).toFixed(2))
-  //   const posY = parseFloat(((event.clientY - event.target.getBoundingClientRect().y) / event.target.offsetHeight - 0.5).toFixed(2))
+  function mouseInteraction(event) {
+    const posX = parseFloat(((event.clientX - event.target.getBoundingClientRect().x) / event.target.offsetWidth - 0.5).toFixed(2))
+    const posY = parseFloat(((event.clientY - event.target.getBoundingClientRect().y) / event.target.offsetHeight - 0.5).toFixed(2))
 
-  //   event.target.style.transform = `rotateX(${-50 * posY}deg) rotateY(${50 * posX}deg)`
-  // }
+    event.target.style.transform = `rotateX(${-50 * posY}deg) rotateY(${50 * posX}deg)`
+  }
 
-  // function mouseInteractionReset(event: { target: { style: { transform: null } } }) {
-  //     event.target.style.transform = null
-  // }
-
-  // ISUES WITH DEPLOYING DUE TO TYPE NOT BEING READ | FIX AT LATER DATE
+  function mouseInteractionReset(event) {
+      event.target.style.transform = null
+  }
 
   return (
     <div className='mobile-resize-div flex justify-between mt-15 gap-10'>
@@ -42,7 +40,7 @@ export default function greeting() {
       <div className='perspective-100dvh'>
         <img 
           src={pfp}
-          // onMouseMove={mouseInteraction} onMouseOut={mouseInteractionReset}
+          onMouseMove={mouseInteraction} onMouseOut={mouseInteractionReset}
           className='w-dvw max-w-[20rem] rounded-2xl hover:drop-shadow-glow transition-all duration-150' 
         />
       </div>

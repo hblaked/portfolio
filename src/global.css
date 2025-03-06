@@ -42,4 +42,8 @@ body {
   .mobile-resize-privacy {
     margin-top: 1.5em;
   }
+
+  .mobile-resize-featured {
+    margin-bottom: 2.15em;
+  }
 }

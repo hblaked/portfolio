@@ -1,7 +1,7 @@
 
 export default function tech() {
   return (
-    <div className='flex flex-col mt-15 mb-15'>
+    <div className='mobile-resize-featured flex flex-col mt-15'>
         <h1 className='text-3xl font-serif font-bold mb-5'>technologies.</h1>
         
         <div className='grid grid-cols-3 p-3 gap-5 font-bold'>

@@ -15,6 +15,7 @@ export default function greeting() {
       event.target.style.transform = null
   }
 
+
   return (
     <div className='mobile-resize-div flex justify-between mt-15 gap-10'>
       <div className='flex flex-col justify-center gap-10'>
@@ -37,11 +38,11 @@ export default function greeting() {
         </div>
       </div>
 
-      <div className='perspective-100dvh'>
+      <div className='perspective-[100dvw]'>
         <img 
           src={pfp}
           onMouseMove={mouseInteraction} onMouseOut={mouseInteractionReset}
-          className='w-dvw max-w-[20rem] rounded-2xl hover:drop-shadow-glow transition-all duration-150' 
+          className='w-dvw max-w-[20rem] rounded-2xl hover:drop-shadow-glow transition-all duration-150 ease-linear' 
         />
       </div>
       <Outlet />

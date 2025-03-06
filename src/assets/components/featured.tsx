@@ -2,7 +2,7 @@ import bse from '../images/bse.png';
 
 export default function Featured() {
   return (
-    <div className='flex flex-col mt-15'>
+    <div className='flex flex-col'>
         <h1 className='text-3xl font-serif font-bold mb-5'>featured projects.</h1>
         
         <div className='mobile-resize-grid grid grid-cols-2 p-3 gap-5'>
